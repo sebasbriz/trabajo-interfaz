@@ -1,17 +1,25 @@
+@font-face {
+    font-family: 'bloodFont';
+    src: url("./fuentes/Fleshandblood-MVA5x.ttf");
+  }
+
 body {
-    background-image: url(R.jpeg);
+    background-image: url(./imagen/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #titulo{
     color: white;
-    font-size: 100px;
+    font-family: 'bloodFont';
+    font-size: 150px;
     text-align: center;
 }
 
 .container p {
     color: white;
+    font-family: 'bloodFont';
+    font-size: 30px;
     text-align: center;
     
 }
@@ -27,7 +35,15 @@ body {
 .container a:visited {
     color: white;
 }
+@keyframes selector {
+    from {background-color: rgba(218, 165, 32, 0.384);}
+    to {background-color: rgba(218, 165, 32, 0.815);}
+}
+
 .container a:hover {
-    
+    animation-name: selector;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     background-color: rgba(218, 165, 32, 0.384);
 }
