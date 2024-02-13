@@ -1,0 +1,21 @@
+body {
+    background-image: url(R.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#titulo{
+    color: white;
+    font-size: 100px;
+    text-align: center;
+}
+
+.container p {
+    color: white;
+    text-align: center;
+    
+}
+
+#mainTheme{
+    display: none;
+}
