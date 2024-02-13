@@ -19,3 +19,15 @@ body {
 #mainTheme{
     display: none;
 }
+
+.container a:link {
+    color: white;
+    text-decoration: none;
+}
+.container a:visited {
+    color: white;
+}
+.container a:hover {
+    
+    background-color: rgba(218, 165, 32, 0.384);
+}
