@@ -3,10 +3,12 @@
     src: url("./fuentes/Fleshandblood-MVA5x.ttf");
   }
 
-body {
+body{
     background-image: url(./imagen/background.jpeg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #titulo{
@@ -36,8 +38,8 @@ body {
     color: white;
 }
 @keyframes selector {
-    from {background-color: rgba(218, 165, 32, 0.384);}
-    to {background-color: rgba(218, 165, 32, 0.815);}
+    from {background-color: rgba(218, 32, 32, 0.096);}
+    to {background-color: rgba(218, 32, 32, 0.815);}
 }
 
 .container a:hover {
