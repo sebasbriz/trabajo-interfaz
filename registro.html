@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
+    <video autoplay muted loop class="backVideo">
+        <source src="./video/bloodborne-moon-presence-moewalls-com.mp4" type="video/mp4">
+    </video>
    <!--Formulario de registro-->
    <div class="container">
     <form class="form-content">
@@ -17,7 +20,7 @@
             
             <div class="input-field" id="name-input">
                 <i class="fa-solid fa-user" ></i>
-                <input type="text" placeholder="Nombre de Usuario">
+                <input type="text" id="txtName" placeholder="Nombre de Usuario">
             </div>
             <div class="input-field">
                 <i class="fa-solid fa-envelope" ></i>
@@ -30,11 +33,8 @@
             <p>Olvidaste tu contraseña <a href="#">click aqui</a></p>
         </div>
         <div class="button-field">
-            <button id="register" type="button">Registro</button>
-            <button id="LogIn" type="button" class="disable">LogIn</button>
-        </div>
-        <div class="button-back">
-            <button id="volver" type="button">Volver</button>
+            <button id="btnRegistro" type="button">Registro</button>
+            <button id="btnVolver" type="button">Volver</button>
         </div>
     </form>
     </div>

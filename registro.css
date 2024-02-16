@@ -9,6 +9,16 @@
     box-sizing: border-box;
     font-family: 'bloodFont';
   }
+
+  .backVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
   
   .container{
     width: 100%;
@@ -25,6 +35,7 @@
     background-color: rgba(0, 0, 0, 0.815);
     text-align: center; 
     padding: 40px 60px 60px;
+    z-index: 1;
   }
   
   .form-content h3 {
@@ -75,24 +86,6 @@
   background-color: gray;
   border: 0;
   outline: 0;
-  cursor: pointer;
-}
-
-.button-field button.disable {
-  background-color: white;
-  color: black;
-}
-
-.button-back {
-  display: flex;
-  margin-top: 30px;
-  justify-content: center;
-}
-
-.button-back button {
-  flex-basis: 80px;
-  height: 38px;
-  font-size: 16px;
   cursor: pointer;
 }
 
