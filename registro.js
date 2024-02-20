@@ -1,12 +1,56 @@
 document.addEventListener("DOMContentLoaded", function(){
     //zona segura
-    const registro = document.getElementById("btnRegistro");
-    const volver = document.getElementById("btnVolver");
+    const btnRegistro = document.getElementById("btnRegistro");
+    const btnVolver = document.getElementById("btnVolver");
 
     //Se le asigna el evento click al botón crear
     btnRegistro.addEventListener("click", function() {
-        capturarDatosDelFormulario();
+        capturarDatos();
+    });
+
+    btnVolver.addEventListener("click", function(){
+        volverPagAnterior();
     });
 });
 
+function capturarDatos(){
+    const txtName = document.getElementById("txtName");
+    const email = document.getElementById("email");
+    const password = document.getElementById("password");
 
+    const nombre = txtName.value.trim();
+    if(!nombre) {
+        alert("Ingrese el nombre de Usuario");
+        return;
+    };
+
+    const mail = email.value.trim();
+    if(!mail){
+        alert("Ingrese el EMAIL");
+        return;
+    };
+
+    const pass = password.value.trim();
+    if(!pass){
+        alert("Ingrese su contraseña");
+        return;
+    };
+
+    const user = {
+        nombre: nombre,
+        email: mail,
+        contrasenha: pass,
+    };
+    console.log(user);
+
+    const craerJsonUsuario = JSON.stringify(user);
+    console.log(craerJsonUsuario);
+    localStorage.setItem("user", craerJsonUsuario);
+
+    alert("Registro exitoso.")
+    location.href="index.html";
+};
+
+function volverPagAnterior(){
+    location.href="index.html"
+};
