@@ -48,9 +48,9 @@ function capturarDatos(){
     localStorage.setItem("user", craerJsonUsuario);
 
     alert("Registro exitoso.")
-    location.href="index.html";
+    location.replace("./index.html");
 };
 
 function volverPagAnterior(){
-    location.href="index.html"
+    location.replace("./index.html");
 };
