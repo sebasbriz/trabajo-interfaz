@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function(){
     const btnRegistro = document.getElementById("btnRegistro");
     const btnVolver = document.getElementById("btnVolver");
 
+    reproducirAudio();
+
     //Se le asigna el evento click al botón crear
     btnRegistro.addEventListener("click", function() {
         capturarDatos();
@@ -12,6 +14,16 @@ document.addEventListener("DOMContentLoaded", function(){
         volverPagAnterior();
     });
 });
+
+function reproducirAudio() {
+    // Hay que permitir en google chrome la reproduccion de audio
+    // en el candadito
+    const audio = document.getElementById("mainTheme");
+    audio.loop = true;
+    audio.autoplay = true;
+    audio.load();
+    audio.play();
+}
 
 function capturarDatos(){
     const txtName = document.getElementById("txtName");
